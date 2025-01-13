@@ -18,6 +18,10 @@
   border-color: var(--foreground);
 }
 
+.border-background {
+  border-color: var(--background);
+}
+
 .fill-foreground {
   fill: var(--foreground);
 }

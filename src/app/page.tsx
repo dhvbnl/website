@@ -46,7 +46,8 @@ export default function Home() {
 
           <div className="w-full text-center px-4">
             <p className="text-lg">
-              I&apos;m a Computer Science student at the University of Washington with a deep passion for technology and learning!
+              Hey!
+              I&apos;m studying Computer Science at the University of Washington with a deep passion for technology and art. I love learning and am always happy to connect with like-minded individuals.
             </p>
           </div>
         </div>
@@ -71,22 +72,34 @@ export default function Home() {
 
           <div className="w-[37.5%] text-right">
             <hr className="border-t-2 border-foreground w-11/12 mb-2 ml-auto" />
-            <p className="w-11/12 text-xl text-right ml-auto">
-              I&apos;m a Computer Science student at the University of Washington with a deep passion for technology and learning!
+            <p className="w-11/12 text-l text-right ml-auto font-bold">
+              Hey!
+              I&apos;m studying Computer Science at the University of Washington with a deep passion for technology and art. I love learning and am always happy to connect with like-minded individuals.
             </p>
           </div>
         </div>
       )}
       <div className="w-full flex justify-center items-center space-x-2">
-        <a href="https://www.linkedin.com/in/dhvbnl/" target="_blank" rel="noopener noreferrer">
-          <Linkedin className="icon fill-foreground" />
+        <a href="https://www.linkedin.com/in/dhvbnl/" target="_blank" rel="noopener noreferrer" className="group">
+          <Linkedin className="icon fill-foreground group-hover:fill-[#0a66c2] transition duration-300" />
         </a>
-        <a href="https://www.github.com/dhvbnl" target="_blank" rel="noopener noreferrer">
-          <Github className="icon fill-foreground" />
+        <a href="https://www.github.com/dhvbnl" target="_blank" rel="noopener noreferrer" className="group">
+          <Github className="icon fill-foreground group-hover:fill-[#2dba4e] transition duration-300" />
         </a>
-        <a href="https://medium.com/@dhvbnl" target="_blank" rel="noopener noreferrer">
-          <Medium className="icon fill-foreground" />
+        <a href="https://medium.com/@dhvbnl" target="_blank" rel="noopener noreferrer" className="group">
+          <Medium className="icon fill-foreground group-hover:fill-[#f5c147] transition duration-300" />
         </a>
+      </div>
+      <div className="w-full flex justify-center items-center mt-5">
+        {isMobile ? (
+          <p className="w-11/12 text-l text-center font-bold">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+          </p>
+        ) : (
+          <p className="w-1/2 text-l text-center font-bold">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+          </p>
+        )}
       </div>
     </div>
   );
