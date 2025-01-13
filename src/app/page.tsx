@@ -45,7 +45,7 @@ export default function Home() {
           </div>
 
           <div className="w-full text-center px-4">
-            <p className="text-lg">
+            <p className="text-lg font-bold">
               Hey!
               I&apos;m studying Computer Science at the University of Washington with a deep passion for technology and art. I love learning and am always happy to connect with like-minded individuals.
             </p>
@@ -72,7 +72,7 @@ export default function Home() {
 
           <div className="w-[37.5%] text-right">
             <hr className="border-t-2 border-foreground w-11/12 mb-2 ml-auto" />
-            <p className="w-11/12 text-l text-right ml-auto font-bold">
+            <p className="w-11/12 text-lg text-right ml-auto font-bold">
               Hey!
               I&apos;m studying Computer Science at the University of Washington with a deep passion for technology and art. I love learning and am always happy to connect with like-minded individuals.
             </p>
@@ -91,15 +91,26 @@ export default function Home() {
         </a>
       </div>
       <div className="w-full flex justify-center items-center mt-5">
-        {isMobile ? (
-          <p className="w-11/12 text-l text-center font-bold">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-          </p>
-        ) : (
-          <p className="w-1/2 text-l text-center font-bold">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
-          </p>
-        )}
+        <p className={`text-lg text-center ${isMobile ? 'w-full' : 'w-7/12'}`}>
+          Outside of technology, I love to go on photography walks, driving adventures, and try new cafes.
+          I&apos;m always looking for new experiences and am excited to see where life takes me next.
+          <br />
+          <br />
+          Previously, I&apos;ve worked at&nbsp;
+          <a href="https://www.electricera.tech/" target="_blank" rel="noopener noreferrer" className="text-link">
+            Electric Era&nbsp;
+          </a>
+          where I worked on control battery system algorithms and web development. 
+          Currently, I&apos;m working as a Teaching and Research Assistant under the&nbsp;
+          <a href="https://www.cs.washington.edu/" target="_blank" rel="noopener noreferrer" className="text-link">
+            Allen School
+          </a>.
+          This summer, I will be interning at&nbsp;
+          <a href="https://www.amazon.com/" target="_blank" rel="noopener noreferrer" className="text-link">
+            Amazon
+          </a>
+          !
+        </p>
       </div>
     </div>
   );

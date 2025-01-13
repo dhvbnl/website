@@ -26,6 +26,21 @@
   fill: var(--foreground);
 }
 
+.text-link {
+  color: #0a742a;
+}
+
+@media (prefers-color-scheme: dark) {
+  .text-link {
+    color: #dec867;
+  }
+}
+
+
+.text-link:hover {
+  opacity: 0.7;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
