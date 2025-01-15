@@ -34,7 +34,8 @@ export default function Home() {
                 src="/dhruv.jpg"
                 alt="Dhruv Bansal"
                 fill={true}
-                className="rounded-full object-cover shadow-lg"
+                className="rounded-full object-cover shadow-lg opacity-0 transition-opacity duration-500 ease-in-out"
+                onLoad={(e) => (e.target as HTMLImageElement).classList.remove('opacity-0')}
               />
             </div>
           </div>
@@ -65,7 +66,8 @@ export default function Home() {
                 src="/dhruv.jpg"
                 alt="Dhruv Bansal"
                 fill={true}
-                className="rounded-full"
+                className="rounded-full object-cover shadow-lg opacity-0 transition-opacity duration-500 ease-in-out"
+                onLoad={(e) => (e.target as HTMLImageElement).classList.remove('opacity-0')}
               />
             </div>
           </div>
@@ -100,7 +102,7 @@ export default function Home() {
           <a href="https://www.electricera.tech/" target="_blank" rel="noopener noreferrer" className="text-link">
             Electric Era&nbsp;
           </a>
-          where I worked on control battery system algorithms and web development. 
+          where I worked on control battery system algorithms and web development.
           Currently, I&apos;m working as a Teaching and Research Assistant under the&nbsp;
           <a href="https://www.cs.washington.edu/" target="_blank" rel="noopener noreferrer" className="text-link">
             Allen School
