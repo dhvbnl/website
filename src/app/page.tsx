@@ -107,11 +107,6 @@ export default function Home() {
           <a href="https://www.cs.washington.edu/" target="_blank" rel="noopener noreferrer" className="text-link">
             Allen School
           </a>.
-          This summer, I will be interning at&nbsp;
-          <a href="https://www.amazon.com/" target="_blank" rel="noopener noreferrer" className="text-link">
-            Amazon
-          </a>
-          !
         </p>
       </div>
     </div>
