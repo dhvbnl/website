@@ -55,7 +55,7 @@ export default function Home() {
       ) : (
         // Desktop/Horizontal Layout
         <div className="flex flex-row justify-between items-center mb-5">
-          <div className="w-[37.5%] text-left">
+          <div className="w-[37.5%] text-left animate-fade-in-left">
             <label className="text-5xl font-bold">Dhruv Bansal</label>
             <hr className="border-t-2 border-foreground w-11/12 mt-2" />
           </div>
@@ -72,11 +72,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="w-[37.5%] text-right">
+          <div className="w-[37.5%] text-right animate-fade-in-right">
             <hr className="border-t-2 border-foreground w-11/12 mb-2 ml-auto" />
             <p className="w-11/12 text-lg text-right ml-auto font-bold">
-              Hey!
-              I&apos;m studying Computer Science at the University of Washington with a deep passion for technology and art. I love learning and am always happy to connect with like-minded individuals.
+            Hey!
+            I&apos;m studying Computer Science at the University of Washington 
+            with a deep passion for technology and art. I love learning and am 
+            always happy to connect with like-minded individuals.
             </p>
           </div>
         </div>
@@ -107,7 +109,7 @@ export default function Home() {
           <a href="https://www.cs.washington.edu/" target="_blank" rel="noopener noreferrer" className="text-link">
             Allen School
           </a>.
-          This summer, I&apos;ll be interning at&nbsp; 
+          This summer, I&apos;ll be interning at&nbsp;
           <a href="https://www.apple.com/" target="_blank" rel="noopener noreferrer" className="text-link">
             🍎
           </a>.
