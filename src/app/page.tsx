@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { useMediaQuery } from 'usehooks-ts';
+import { useMediaQuery } from "usehooks-ts";
 import Linkedin from "./icons/icons8-linkedin.svg";
 import Github from "./icons/icons8-github.svg";
 import Medium from "./icons/icons8-medium.svg";
@@ -24,7 +24,6 @@ export default function Home() {
 
   return (
     <div className="p-10 w-full">
-      {/* Conditional Rendering Based on Screen Size */}
       {isMobile ? (
         // Mobile Layout
         <div className="p-4 w-full flex flex-col justify-center items-center space-y-6">
@@ -35,7 +34,9 @@ export default function Home() {
                 alt="Dhruv Bansal"
                 fill={true}
                 className="rounded-full object-cover shadow-lg opacity-0 transition-opacity duration-500 ease-in-out"
-                onLoad={(e) => (e.target as HTMLImageElement).classList.remove('opacity-0')}
+                onLoad={(e) =>
+                  (e.target as HTMLImageElement).classList.remove("opacity-0")
+                }
               />
             </div>
           </div>
@@ -47,8 +48,10 @@ export default function Home() {
 
           <div className="w-full text-center px-4">
             <p className="text-lg font-bold">
-              Hey!
-              I&apos;m studying Computer Science at the University of Washington with a deep passion for technology and art. I love learning and am always happy to connect with like-minded individuals.
+              Hey! I&apos;m studying Computer Science at the University of
+              Washington with a deep passion for technology and art. I love
+              learning and am always happy to connect with like-minded
+              individuals.
             </p>
           </div>
         </div>
@@ -67,7 +70,9 @@ export default function Home() {
                 alt="Dhruv Bansal"
                 fill={true}
                 className="rounded-full object-cover shadow-lg opacity-0 transition-opacity duration-500 ease-in-out"
-                onLoad={(e) => (e.target as HTMLImageElement).classList.remove('opacity-0')}
+                onLoad={(e) =>
+                  (e.target as HTMLImageElement).classList.remove("opacity-0")
+                }
               />
             </div>
           </div>
@@ -75,44 +80,77 @@ export default function Home() {
           <div className="w-[37.5%] text-right animate-fade-in-right">
             <hr className="border-t-2 border-foreground w-11/12 mb-2 ml-auto" />
             <p className="w-11/12 text-lg text-right ml-auto font-bold">
-            Hey!
-            I&apos;m studying Computer Science at the University of Washington 
-            with a deep passion for technology and art. I love learning and am 
-            always happy to connect with like-minded individuals.
+              Hey! I&apos;m studying Computer Science at the University of
+              Washington with a deep passion for technology and art. I love
+              learning and am always happy to connect with like-minded
+              individuals.
             </p>
           </div>
         </div>
       )}
       <div className="w-full flex justify-center items-center space-x-2">
-        <a href="https://www.linkedin.com/in/dhvbnl/" target="_blank" rel="noopener noreferrer" className="group">
+        <a
+          href="https://www.linkedin.com/in/dhvbnl/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group"
+        >
           <Linkedin className="icon fill-foreground group-hover:fill-[#0a66c2] transition duration-300" />
         </a>
-        <a href="https://www.github.com/dhvbnl" target="_blank" rel="noopener noreferrer" className="group">
+        <a
+          href="https://www.github.com/dhvbnl"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group"
+        >
           <Github className="icon fill-foreground group-hover:fill-[#2dba4e] transition duration-300" />
         </a>
-        <a href="https://medium.com/@dhvbnl" target="_blank" rel="noopener noreferrer" className="group">
+        <a
+          href="https://medium.com/@dhvbnl"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group"
+        >
           <Medium className="icon fill-foreground group-hover:fill-[#f5c147] transition duration-300" />
         </a>
       </div>
       <div className="w-full flex justify-center items-center mt-5">
-        <p className={`text-lg text-center ${isMobile ? 'w-full' : 'w-7/12'}`}>
-          Outside of technology, I love to go on photography walks, driving adventures, and try new cafes.
-          I&apos;m always looking for new experiences and am excited to see where life takes me next.
+        <p className={`text-lg text-center ${isMobile ? "w-full" : "w-7/12"}`}>
+          Outside of technology, I love to go on photography walks, driving
+          adventures, and try new cafes. I&apos;m always looking for new
+          experiences and am excited to see where life takes me next.
           <br />
           <br />
           Previously, I&apos;ve worked at&nbsp;
-          <a href="https://www.electricera.tech/" target="_blank" rel="noopener noreferrer" className="text-link">
+          <a
+            href="https://www.electricera.tech/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-link"
+          >
             Electric Era&nbsp;
           </a>
-          where I worked on control battery system algorithms and web development.
-          Currently, I&apos;m working as a Teaching and Research Assistant under the&nbsp;
-          <a href="https://www.cs.washington.edu/" target="_blank" rel="noopener noreferrer" className="text-link">
+          where I worked on control battery system algorithms and web
+          development. Currently, I&apos;m working as a Teaching and Research
+          Assistant under the&nbsp;
+          <a
+            href="https://www.cs.washington.edu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-link"
+          >
             Allen School
-          </a>.
-          This summer, I&apos;ll be interning at&nbsp;
-          <a href="https://www.apple.com/" target="_blank" rel="noopener noreferrer" className="text-link">
+          </a>
+          . This summer, I&apos;m interning at&nbsp;
+          <a
+            href="https://www.apple.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-link"
+          >
             🍎
-          </a>.
+          </a>
+          .
         </p>
       </div>
     </div>
